@@ -86,7 +86,7 @@ int main(void){
         do{
             puts("Deseja continuar com o programa? 1 - sim | 2 - nao");
             scanf("%d", &resp);
-            getchar();
+            getchar(); //limpa buffer
         }while(resp != 1 && resp != 2);
         
         if(resp == 2)
