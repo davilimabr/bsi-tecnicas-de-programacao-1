@@ -3,11 +3,10 @@
 #include <stdlib.h>
 
 int main(void){
-    int qtd_alunos_A, qtd_alunos_B;
-    int *alunos_A, *alunos_B;
+    int *alunos_A, qtd_alunos_A, *alunos_B, qtd_alunos_B;
     int i, j; //contadores
-    bool continua;
 
+    //entrada de valores turma a
     while(true){
         puts("Insira a quantidade de alunos da turma A:");
         scanf("%d", &qtd_alunos_A);
@@ -18,19 +17,19 @@ int main(void){
     }
 
     alunos_A = (int *) malloc(qtd_alunos_A * sizeof(int));
-
     for(i = 0; i < qtd_alunos_A; i++){
         while(true){
-            printf("Digite a matricula do aluno %d\n", i+1);
+            printf("Digite a matricula do aluno %d (6 digitos)\n", i+1);
             scanf("%d", &alunos_A[i]);
 
-            if(alunos_A[i] < 100000 || alunos_A[i] > 999999)
-                printf("O numero de matricula possui menos ou mais de 6 digitos. Digite novamente.\n");
+            if(alunos_A[i] < 0 || alunos_A[i] < 100000 || alunos_A[i] > 999999)
+                printf("O numero e inválido ou possui menos ou mais de 6 digitos. Digite novamente.\n");
             else break;
         }        
     }
 
     system("cls");
+    //entrada de valores turma b
     while(true){
         puts("Insira a quantidade de alunos da turma B:");
         scanf("%d", &qtd_alunos_B);
@@ -39,14 +38,21 @@ int main(void){
             printf("A quantidade de alunos deve ser maior que zero. Digite novamente.\n");
         else break;
     }
-    
-    alunos_B = (int *) malloc(qtd_alunos_A * sizeof(int));
+
+    alunos_B = (int *) malloc(qtd_alunos_B * sizeof(int));
     for(i = 0; i < qtd_alunos_B; i++){
-        printf("Digite a matricula do aluno %d\n", i+1);
-        scanf("%d", &alunos_B[i]);
+        while(true){
+            printf("Digite a matricula do aluno %d (6 digitos)\n", i+1);
+            scanf("%d", &alunos_B[i]);
+
+            if(alunos_B[i] < 0 || alunos_B[i] < 100000 || alunos_B[i] > 999999)
+                printf("O numero e inválido ou possui menos ou mais de 6 digitos. Digite novamente.\n");
+            else break;
+        }
     }
 
     system("cls");
+    //mostrar resultados
     puts("Alunos presentes em ambas as turmas:\n");
     for(i = 0; i < qtd_alunos_A; i++){
         for(j = 0; j < qtd_alunos_B; j++){
@@ -79,6 +85,3 @@ int main(void){
             printf("%d\n", alunos_B[i]);
     }
 }
-
-
-//ta aceitando menor que zero

@@ -1,16 +1,14 @@
 #include<stdio.h>
-#include<locale.h>
 #include<stdio.h>
-#include <stdlib.h> //necessário para usar as funções malloc() e free()
+#include <stdlib.h>
 
 int main(void){
-    setlocale(LC_ALL, "Portuguese");
 
     int tamanho_S;
     float *conjunto_S;
 
     do{
-         puts("Insira o tamanho do conjunto S de números:");
+         puts("Insira o tamanho do conjunto S de nï¿½meros:");
         scanf("%d", &tamanho_S);
     }while(tamanho_S < 3);
    
@@ -18,7 +16,7 @@ int main(void){
 
     int i;
     for(i = 0; i < tamanho_S; i++){
-        puts("digite o número:");
+        puts("digite o nï¿½mero:");
         scanf("%f", &conjunto_S[i]);
     }
 

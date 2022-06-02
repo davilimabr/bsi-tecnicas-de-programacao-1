@@ -5,7 +5,7 @@
 int main(void){
     float acres, v_total, v_tipo, v_serv;
     char tipo_pulverizacao;
-    bool continua;
+    bool c_valido;
 
     while(true){
         puts("Calcular preco pulverizacao                        ");
@@ -18,13 +18,13 @@ int main(void){
         puts("H - gafanhotos + broca             R$ 240,00 / acre");
         puts("T - todos                          R$ 270,00 / acre");
 
-        //escolha do tipo de servico
-        bool c_valido = true;
+        //entrada do tipo de servico
         do{
             c_valido = true;
-            puts("Escolha um dos tipos de serviço de acordo com a tabela, inserindo a letra correspondente.");
+            puts("Escolha um dos tipos de servico de acordo com a tabela, inserindo a letra correspondente.");
             tipo_pulverizacao = getchar();
             getchar();
+            
             switch(toupper(tipo_pulverizacao)){
                 case 'E':
                     v_tipo = 50;
@@ -52,12 +52,11 @@ int main(void){
                     break;
             }
         }while(!c_valido);
-
         system("cls");
-
+    
         //entrada da quantidade de acres
         do{
-            puts("Insira a quantidade de acres:");
+            puts("Insira a quantidade de acres, que deve ser superior a 0:");
             scanf("%f", &acres);
         }while(acres <= 0);
 
@@ -66,30 +65,32 @@ int main(void){
         system("cls");
         printf("O valor total do servico sera de R$%.2f\n", v_serv);
 
-        float desc;
+        float desc = 0;
         if(acres > 10){
             desc = v_total * 0.05;    
             v_total = v_total - desc;
-            printf("valor do desconto de 05%%: R$%.2f\n", desc);
+            printf("valor do desconto de 05%%:  R$%.2f\n", desc);
         }
         if(v_total > 750){
             desc = (v_total - 750) * 0.1;
             v_total = v_total - desc;
-            printf("valor do desconto de 10%%: R$%.2f\n", desc);
+            printf("valor do desconto de 10%% sobre o excedente de R$750: R$%.2f\n", desc);
         }
+        if(desc != 0)
+            printf("O valor total a pagar (com os descontos) e de R$%.2f\n", v_total);
 
-        printf("O valor total a pagar (com os descontos) e de R$%.2f\n", v_total);
-
-        //perguntar se programa de continuar rodadando
+        //pergunta se o programa continua rodando
+        system("pause");
+        system("cls");
         int resp;
         do{
             puts("Deseja continuar com o programa? 1 - sim | 2 - nao");
             scanf("%d", &resp);
+            getchar();
         }while(resp != 1 && resp != 2);
         
         if(resp == 2)
-            continua = false;
+            break;
         else system("cls");
     }
 }
-//colocar mensagens na verificação 
