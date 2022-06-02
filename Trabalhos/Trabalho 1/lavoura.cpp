@@ -1,0 +1,95 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+
+int main(void){
+    float acres, v_total, v_tipo, v_serv;
+    char tipo_pulverizacao;
+    bool continua;
+
+    while(true){
+        puts("Calcular preco pulverizacao                        ");
+        puts("Tipo da pulverizacao               Valor           ");
+        puts("E - ervas daninhas                 R$ 50,00  / acre");
+        puts("G - gafanhotos                     R$ 100,00 / acre");
+        puts("B - broca                          R$ 150,00 / acre");
+        puts("A - ervas daninhas + gafanhotos    R$ 140,00 / acre");
+        puts("F - ervas daninhas + broca         R$ 190,00 / acre");
+        puts("H - gafanhotos + broca             R$ 240,00 / acre");
+        puts("T - todos                          R$ 270,00 / acre");
+
+        //escolha do tipo de servico
+        bool c_valido = true;
+        do{
+            c_valido = true;
+            puts("Escolha um dos tipos de serviço de acordo com a tabela, inserindo a letra correspondente.");
+            tipo_pulverizacao = getchar();
+            getchar();
+            switch(toupper(tipo_pulverizacao)){
+                case 'E':
+                    v_tipo = 50;
+                    break;
+                case 'G':
+                    v_tipo = 100;
+                    break;
+                case 'B':
+                    v_tipo = 150;
+                    break;
+                case 'A':
+                    v_tipo = 140;
+                    break;
+                case 'F':
+                    v_tipo = 190;
+                    break;
+                case 'H':
+                    v_tipo = 240;
+                    break;
+                case 'T':
+                    v_tipo = 270;
+                    break;
+                default:
+                    c_valido = false;
+                    break;
+            }
+        }while(!c_valido);
+
+        system("cls");
+
+        //entrada da quantidade de acres
+        do{
+            puts("Insira a quantidade de acres:");
+            scanf("%f", &acres);
+        }while(acres <= 0);
+
+        v_total = v_serv = v_tipo * acres;
+
+        system("cls");
+        printf("O valor total do servico sera de R$%.2f\n", v_serv);
+
+        float desc;
+        if(acres > 10){
+            desc = v_total * 0.05;    
+            v_total = v_total - desc;
+            printf("valor do desconto de 05%%: R$%.2f\n", desc);
+        }
+        if(v_total > 750){
+            desc = (v_total - 750) * 0.1;
+            v_total = v_total - desc;
+            printf("valor do desconto de 10%%: R$%.2f\n", desc);
+        }
+
+        printf("O valor total a pagar (com os descontos) e de R$%.2f\n", v_total);
+
+        //perguntar se programa de continuar rodadando
+        int resp;
+        do{
+            puts("Deseja continuar com o programa? 1 - sim | 2 - nao");
+            scanf("%d", &resp);
+        }while(resp != 1 && resp != 2);
+        
+        if(resp == 2)
+            continua = false;
+        else system("cls");
+    }
+}
+//colocar mensagens na verificação 
