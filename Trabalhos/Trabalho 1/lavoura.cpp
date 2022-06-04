@@ -16,7 +16,7 @@ int main(void){
         puts("A - ervas daninhas + gafanhotos    R$ 140,00 / acre");
         puts("F - ervas daninhas + broca         R$ 190,00 / acre");
         puts("H - gafanhotos + broca             R$ 240,00 / acre");
-        puts("T - todos                          R$ 270,00 / acre");
+        puts("T - todos                          R$ 270,00 / acre\n");
 
         //entrada do tipo de servico
         do{
@@ -71,8 +71,8 @@ int main(void){
             v_total = v_total - desc;
             printf("valor do desconto de 05%%:  R$%.2f\n", desc);
         }
-        if(v_total > 750){
-            desc = (v_total - 750) * 0.1;
+        if(v_serv > 750){
+            desc = (v_serv - 750) * 0.1;
             v_total = v_total - desc;
             printf("valor do desconto de 10%% sobre o excedente de R$750: R$%.2f\n", desc);
         }
