@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int main(void){
-    int *alunos_A, qtd_alunos_A, *alunos_B, qtd_alunos_B;
+    int qtd_alunos_A, qtd_alunos_B;
     int i, j; //contadores
 
     //entrada de valores turma a
@@ -16,7 +16,7 @@ int main(void){
         else break;
     }
 
-    alunos_A = (int *) malloc(qtd_alunos_A * sizeof(int));
+    int alunos_A[qtd_alunos_A];
     for(i = 0; i < qtd_alunos_A; i++){
         while(true){
             printf("Digite a matricula do aluno %d (6 digitos)\n", i+1);
@@ -39,7 +39,7 @@ int main(void){
         else break;
     }
 
-    alunos_B = (int *) malloc(qtd_alunos_B * sizeof(int));
+    int alunos_B[qtd_alunos_B];
     for(i = 0; i < qtd_alunos_B; i++){
         while(true){
             printf("Digite a matricula do aluno %d (6 digitos)\n", i+1);
