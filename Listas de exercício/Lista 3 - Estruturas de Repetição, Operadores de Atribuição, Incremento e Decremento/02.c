@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int num = 50;
     while(num > 0){
         printf("%d\n", num);

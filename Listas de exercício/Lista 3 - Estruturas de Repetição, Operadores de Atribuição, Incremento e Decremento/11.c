@@ -3,7 +3,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int n, m;
 
     printf("Insira dois numeros:");

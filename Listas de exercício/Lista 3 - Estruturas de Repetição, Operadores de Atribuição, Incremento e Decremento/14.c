@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<math.h>
 
-int main(int){
+int main(void){
     int num = 1;
 
     while(num != 0){

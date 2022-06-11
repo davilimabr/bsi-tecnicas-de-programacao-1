@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int idade, eleitor = 0;
 
     while(idade > 0){

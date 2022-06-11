@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int i, qtd_pares = 0;
     for(i = 0; qtd_pares <= 30; i++){
         if(i % 2 != 0){

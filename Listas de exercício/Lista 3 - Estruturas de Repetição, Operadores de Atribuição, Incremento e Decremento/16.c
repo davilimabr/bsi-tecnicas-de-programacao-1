@@ -3,7 +3,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int num, qtd_impares, sum_impares;
 
     qtd_impares = sum_impares = 0;    

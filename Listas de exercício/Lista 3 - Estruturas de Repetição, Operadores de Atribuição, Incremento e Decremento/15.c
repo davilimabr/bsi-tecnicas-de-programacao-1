@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int num, pares = 0;
 
     while(num != 0){

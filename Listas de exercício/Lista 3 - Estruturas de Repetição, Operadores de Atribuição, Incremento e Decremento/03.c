@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int i = 0, qtd_pares = 0;
     while(qtd_pares <= 50){
         i++;

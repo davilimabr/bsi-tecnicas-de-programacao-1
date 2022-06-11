@@ -3,7 +3,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int qtd = 0, num;
 
     int i;

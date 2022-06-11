@@ -5,7 +5,7 @@ negativo. Ao final, deverá ser impresso o percentual de contas com saldo negati
 */
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int num_conta, saldo, positivos, negativos;
 
     positivos = negativos = 0;

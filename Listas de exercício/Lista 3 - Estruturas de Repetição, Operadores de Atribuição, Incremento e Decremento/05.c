@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int i, qtd_mult = 0;
     for(i = 0; qtd_mult <= 20; i++){
         if(i % 5 == 0){

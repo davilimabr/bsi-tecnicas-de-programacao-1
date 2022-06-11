@@ -12,7 +12,7 @@ imprima a sua matrícula e seu novo salário.
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(int){
+int main(void){
     int matricula, produtividade;
     float salario, novo_salario;
 

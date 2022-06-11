@@ -6,7 +6,7 @@ Obviamente, idades negativas não devem ser computadas.
 */
 #include<stdio.h>
 
-int main(int){
+int main(void){
     int idade, jovens, idosos;
 
     jovens = idosos = 0;

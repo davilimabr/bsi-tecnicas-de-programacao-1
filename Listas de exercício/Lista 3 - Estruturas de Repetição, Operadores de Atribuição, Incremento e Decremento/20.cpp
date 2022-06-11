@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(int){
+int main(void){
     int num, sum, maior, menor, count;
     float media;
 
