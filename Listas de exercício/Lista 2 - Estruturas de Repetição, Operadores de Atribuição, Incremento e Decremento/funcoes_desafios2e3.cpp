@@ -1,11 +1,7 @@
 bool Ebissexto(int ano){
-    if(ano % 400 == 0)
+    if(ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0)
         return true;
-    else{
-        if(ano % 4 == 0 && ano % 100 != 0)
-            return true;
-        else return false;
-    }
+    else return false;
 }
 
 bool DataValida(int dia, int mes, int ano){
