@@ -23,8 +23,7 @@ int main(void){
     }
 
     bool espelhado = true;
-    int j = tam-1;
-    for(int i = 0; i < tam/2; i++, j--)
+    for(int i = 0, j = tam-1; i < tam/2; i++, j--)
         if(vet[i] != vet[j]){
             espelhado = false;
             break;
@@ -34,5 +33,4 @@ int main(void){
         puts("espelhado");
     else
         puts("não espelhado");
-
 }
