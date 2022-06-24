@@ -6,6 +6,7 @@
 - [Lista 2](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-2): Expressões Relacionais e Lógicas, Estruturas de Seleção, Funções Matemáticas
 - [Lista 3](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-3): Estruturas de Repetição, Operadores de Atribuição, Incremento e Decremento
 - [Lista 4](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-4): Vetores e Matrizes
+- [Lista 5](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-5): Cadeias de Caracteres
 
 ## Provas
 - [Prova 1](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/provas/prova-1)
