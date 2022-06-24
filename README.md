@@ -1,26 +1,18 @@
 # Técnicas de Programação 1
 Repositório usado para compartilhar a aplicação na prática, com C/C++, do meu aprendizado ao longo da disciplina de TP1 do curso de [Sistemas de Informação](si), pela Universidade Federal do Estado do Rio de Janeiro ([UNIRIO](unirio)).
 
-## Listas de exercício
-- [Lista 1](l1): Variáveis, Entrada e Saída, Expressões Aritméticas, Conversão de Tipo
-- [Lista 2](l2): Expressões Relacionais e Lógicas, Estruturas de Seleção, Funções Matemáticas
-- [Lista 3](l3): Estruturas de Repetição, Operadores de Atribuição, Incremento e Decremento
-- [Lista 4](l4): Vetores e Matrizes
-- [Lista 5](l5): Cadeias de Caracteres
+=======
+## 🏋🏽‍♀️Listas de exercício
+- ☑[Lista 1](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-1): Variáveis, Entrada e Saída, Expressões Aritméticas, Conversão de Tipo
+- ☑[Lista 2](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-2): Expressões Relacionais e Lógicas, Estruturas de Seleção, Funções Matemáticas
+- ☑[Lista 3](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-3): Estruturas de Repetição, Operadores de Atribuição, Incremento e Decremento
+- ☑[Lista 4](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-4): Vetores e Matrizes
+- ⏸[Lista 5](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-5): Cadeias de Caracteres
 
-## Provas
-- [Prova 1](p1)
+## 🧾Provas
+- [Prova 1](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/provas/prova-1)
 
-## Trabalhos
-- [Trabalho 1](t1)
-
-[si]: <https://bsi.uniriotec.br>
-[unirio]: <http://www.unirio.br>
-[l1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-1>
-[l2]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-2>
-[l3]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-3>
-[l4]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-4>
-[l5]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-5>
-[p1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/provas/prova-1>
-[t1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/trabalhos/trabalho-1>
+## 📚Trabalhos
+- [Trabalho 1](https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/trabalhos/trabalho-1)
+>>>>>>> e9cb8a3f43bdc2054266a28df7ea71f713ac1938
 
