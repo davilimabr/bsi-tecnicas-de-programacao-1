@@ -1,5 +1,5 @@
 # Técnicas de Programação 1
-Repositório usado para compartilhar a aplicação na prática, com C/C++, do meu aprendizado ao longo da disciplina de TP1 do curso de [Sistemas de Informação](si), pela Universidade Federal do Estado do Rio de Janeiro ([UNIRIO](unirio)).
+Repositório usado para compartilhar a aplicação na prática, com C/C++, do meu aprendizado ao longo da disciplina de TP1 do curso de [Sistemas de Informação][si], pela Universidade Federal do Estado do Rio de Janeiro ([UNIRIO][unirio])).
 
 ## Listas de exercício
 - [Lista 1](l1): Variáveis, Entrada e Saída, Expressões Aritméticas, Conversão de Tipo
