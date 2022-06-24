@@ -16,16 +16,14 @@ Deve ser aplicado um desconto de acordo com a tabela, que relaciona as quantidad
 Imprimir no final o valor total e o das parcelas (valor total / parcelas)
 
 eletrodoméstico |   parcelas   |   desconto
-
-forno           |      1             0%         
-                |  2 a 6             5%         
-                |  7 a 18            9%         
-                |  19 ou mais        mensagem de erro         
-
-microondas      |      1             0%         
-                |  2 a 5             6%         
-                |  6 a 12            8%         
-                |  13 ou mais        mensagem de erro         
+forno           |      1       |     0%         
+                |  2 a 6       |     5%         
+                |  7 a 18      |     9%         
+                |  19 ou mais  |     mensagem de erro         
+microondas      |      1       |     0%         
+                |  2 a 5       |     6%         
+                |  6 a 12      |     8%         
+                |  13 ou mais  |     mensagem de erro         
 
 (acho que todas as porcentagens de desconta da tabela estão correts, vamo ver se eu tenho uma memória de elefante mesmo)
 
@@ -72,20 +70,23 @@ int main(void){
 
     if(eletro == 'F'){
         if(parcelas >= 2 && parcelas <= 6)
-            v_total = valor * 0.95;
+            v_total = valor * 1.05;
         else if(parcelas > 6 && parcelas <= 18)
-            v_total = valor * 0.91;
+            v_total = valor * 1.09;
         else 
             v_total = valor;
     }
     else{
         if(parcelas >= 2 && parcelas <= 5)
-            v_total = valor * 0.94;
+            v_total = valor * 1.06;
         else if(parcelas > 5 && parcelas <= 12)
-            v_total = valor * 0.92;
+            v_total = valor * 1.08;
         else 
             v_total = valor;
     }
 
-    printf("Valor total: %2.f\nParcelas: %2.f", v_total, v_total/parcelas);
+    if(parcelas == 1)
+        printf("Valor total: %2.f\n", v_total);
+    else
+        printf("Valor total: %2.f\nParcelas: %2.f", v_total, v_total/parcelas);
 }
