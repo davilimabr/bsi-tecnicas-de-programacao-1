@@ -6,7 +6,7 @@ Repositório usado para compartilhar a aplicação na prática, com C/C++, do me
 - ☑[Lista 2][l2]: Expressões Relacionais e Lógicas, Estruturas de Seleção, Funções Matemáticas
 - ☑[Lista 3][l3]: Estruturas de Repetição, Operadores de Atribuição, Incremento e Decremento
 - ☑[Lista 4][l4]: Vetores e Matrizes
-- ⏸[Lista 5][l5]: Cadeias de Caracteres
+- ☑[Lista 5][l5]: Cadeias de Caracteres
 
 ## Provas
 - [Prova 1](p1)
