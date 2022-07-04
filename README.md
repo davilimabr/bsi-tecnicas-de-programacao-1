@@ -7,6 +7,7 @@ Repositório usado para compartilhar a aplicação na prática, com C/C++, do me
 - ☑[Lista 3][l3]: Estruturas de Repetição, Operadores de Atribuição, Incremento e Decremento
 - ☑[Lista 4][l4]: Vetores e Matrizes
 - ☑[Lista 5][l5]: Cadeias de Caracteres
+- ⏸[Lista 6][l6]: Cadeias de Caracteres
 
 ## Provas
 - [Prova 1](p1)
@@ -21,6 +22,7 @@ Repositório usado para compartilhar a aplicação na prática, com C/C++, do me
     [l3]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-3>
     [l4]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-4>
     [l5]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-5>
+    [l5]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-6>
     [p1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/provas/prova-1>
     [t1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/trabalhos/trabalho-1>
 
