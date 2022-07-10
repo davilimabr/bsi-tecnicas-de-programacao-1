@@ -1,3 +1,11 @@
+/*Implemente a função
+
+void segundo_grau(float a, float b, float c)
+
+que recebe os valores a, b e c de uma equação do segundo grau (ax2 + bx + c = 0) e imprime as
+duas raízes da equação. Se não for possível calcular as duas raízes, então a função deve imprimir
+“Não há raízes”.*/
+
 #include<stdio.h>
 #include<math.h>
 
