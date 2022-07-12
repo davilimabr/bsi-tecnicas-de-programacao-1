@@ -6,6 +6,7 @@ que recebe um vetor v, seu tamanho tam e um número n e retorna a posição de n
 função deve retornar -1. Dica: para ler o vetor use a função le_vetor_real implementada
 anteriormente.*/
 #include<stdio.h>
+#include "funcoes.lib.cpp"
 
 int posicao(float v[], int tam, float n){
     for(int i = 0; i < tam; i++)
@@ -13,13 +14,6 @@ int posicao(float v[], int tam, float n){
             return i;
     
     return -1;
-}
-
-void le_vetor_real(float v[], int tam){
-    for(int i = 0; i < tam; i++){
-        printf("[%d]> ", i);
-        scanf("%f", &v[i]);
-    }
 }
 
 int main(void){
