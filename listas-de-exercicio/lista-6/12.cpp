@@ -9,31 +9,21 @@ função le_vetor_real implementada anteriormente.*/
 #include "funcoes.lib.cpp"
 
 float maior(float v[], int tam){
-    for(int i = 0; i < tam; i++){
-        bool maior = true;
-        for(int j = 0; j < tam; j++)
-            if(v[i] < v[j]){
-                maior = false;
-                break;
-            }
-        
-        if(maior)
-            return v[i];
-    }
+    float maior = v[0];
+    for(int i = 0; i < tam; i++)
+        if(v[i] > maior)
+            maior = v[i];
+    
+    return maior;
 }
 
 float menor(float v[], int tam){
-    for(int i = 0; i < tam; i++){
-        bool menor = true;
-        for(int j = 0; j < tam; j++)
-            if(v[i] > v[j]){
-                menor = false;
-                break;
-            }
-        
-        if(menor)
-            return v[i];
-    }
+    float menor = v[0];
+    for(int i = 0; i < tam; i++)
+        if(v[i] < menor)
+            menor = v[i];
+    
+    return menor;
 }
 
 int main(void){
@@ -43,7 +33,6 @@ int main(void){
     scanf("%d", &tam);
 
     float v[tam];
-
     le_vetor_real(v, tam);
 
     printf("maior: %f\nmenor: %f", maior(v, tam), menor(v, tam));

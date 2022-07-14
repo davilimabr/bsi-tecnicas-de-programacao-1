@@ -29,3 +29,8 @@ void ordenaVetor(float v[], int tam, bool crescente){
             i = 0;
         }
 }
+
+
+bool hora_valida(int hora, int min, int seg){
+    return hora >= 0 && hora < 24   &&   min >= 0 && min < 60   &&   seg >= 0 && seg < 60;
+}
