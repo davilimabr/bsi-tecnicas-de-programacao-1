@@ -15,7 +15,11 @@ void incrementa_hora(int &hora, int &min, int &seg, int segundos){
     int incrementado = horario_seg + segundos;
 
     hora = incrementado / 3600;
+    do{
+        hora %= 24;
+    }while(hora > 24);
     incrementado %= 3600;
+    
     min = incrementado / 60;
     incrementado %= 60;
     seg = incrementado;
