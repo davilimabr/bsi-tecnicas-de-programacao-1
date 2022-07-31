@@ -17,9 +17,9 @@ Repositório usado para compartilhar a aplicação na prática, com C/C++, do me
 - [Prova 1](p1)
 
 ## Trabalhos
-- [Trabalho 1](t1)
-- [Trabalho 2](t2)
-- [Trabalho Extra](textra)
+- [Trabalho 1][t1]
+- [Trabalho 2][t2]
+- [Trabalho Extra][textra]
 
     [si]: <https://bsi.uniriotec.br>
     [unirio]: <http://www.unirio.br>
