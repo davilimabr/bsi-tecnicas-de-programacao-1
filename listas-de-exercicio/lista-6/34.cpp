@@ -29,7 +29,6 @@ bool encaixa(int a, int b){
 }
 
 int main(void){
-    while(true){
     int numa, numb;
 
     puts("digite dois numeros:");
@@ -40,7 +39,5 @@ int main(void){
         puts("encaixa");
     else
         puts("nao encaixa");
-
-    }
 }
 
