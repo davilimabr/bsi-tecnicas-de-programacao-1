@@ -25,6 +25,11 @@ float CalculaPerimetro(Retangulo retangulo){
     return (retangulo.Base * 2) + (retangulo.Altura * 2);
 }
 
+void CalculaBaseeAltura(Retangulo &retangulo){
+    retangulo.Base = retangulo.CantoInferorDireito.X - retangulo.CantoSuperiorEsquedo.X;
+    retangulo.Altura = retangulo.CantoSuperiorEsquedo.Y - retangulo.CantoInferorDireito.Y;
+}
+
 bool RetanguloValido(Retangulo retangulo){
     return retangulo.CantoInferorDireito.X > retangulo.CantoSuperiorEsquedo.X && 
            retangulo.CantoSuperiorEsquedo.Y > retangulo.CantoInferorDireito.Y;
@@ -39,10 +44,9 @@ int main(void){
     puts("Digite as coordenadas x e y do ponto inferior direito do retângulo");
     scanf("%f %f", &retangulo.CantoInferorDireito.X, &retangulo.CantoInferorDireito.Y);
 
-    retangulo.Base = retangulo.CantoInferorDireito.X - retangulo.CantoSuperiorEsquedo.X;
-    retangulo.Altura = retangulo.CantoSuperiorEsquedo.Y - retangulo.CantoInferorDireito.Y;
+    CalculaBaseeAltura(retangulo);
 
-    if(RetanguloValido(retangulo)){
+    if(RetanguloValido(retangulo)){10
         printf("Área: %f\n", CalculaArea(retangulo));
         printf("Perímetro: %f", CalculaPerimetro(retangulo));
     }
