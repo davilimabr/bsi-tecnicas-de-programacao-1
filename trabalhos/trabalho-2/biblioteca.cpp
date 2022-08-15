@@ -436,7 +436,10 @@ int DevolverLivro(Emprestimo emprestimos[], char cpf[12], Data devolucao){
     if(posicao == -1)
         return -2;
 
-    if(!DataValida(devolucao) || !DataEMaior(devolucao, emprestimos[posicao].Emprestimo))
+    Data dt_atual;
+    data_hora_atual(dt_atual);
+
+    if(!DataValida(devolucao) || !DataEMaior(devolucao, emprestimos[posicao].Emprestimo) || DataEMaior(devolucao, dt_atual) )
         return -3;
 
     int prazo = DiferencaEmDiasEntreDatas(emprestimos[posicao].Emprestimo, devolucao);
@@ -609,8 +612,8 @@ void ExcluirLivroMenu(Livro livros[], Emprestimo emprestimos[]){
 void ListarLivrosMenu(Livro livros[], Emprestimo emprestimos[]){
     OrdenaLivrosPorTitulo(livros);
     for(int i = 0; i < getQtdLivrosCadastrados(livros); i++){
-        puts("-------------------------------------------------------------------------");
-        printf("\n%s%sCódigo:%s %s  %s%sTítulo:%s %s  %s%sAutor:%s %s  %s%sAno de Publicação:%s %d\n", C_GRAY, BOLD, NONE, 
+        puts("--------------------------------------------------------------------------------------------------------------");
+        printf("\n%s%sCódigo:%s %s  %s%sTítulo:%s %-30s  %s%sAutor:%s %-30s  %s%sAno de Publicação:%s %d\n", C_GRAY, BOLD, NONE, 
         livros[i].Codigo,  C_GRAY, BOLD, NONE,
         livros[i].Titulo,  C_GRAY, BOLD, NONE,
         livros[i].Autor,  C_GRAY, BOLD, NONE,
@@ -742,10 +745,12 @@ void DevolverLivroMenu(Emprestimo emprestimos[]){
 
 void ListarEmprestimosMenu(Emprestimo emprestimos[]){
     OrdenarEmprestimosPorCPF(emprestimos);
+    
+    puts("------------------------------------------------------------------------------------------------------------");
+    printf("%s%sCPF         Nome                          Código  Título                     Empréstimo  Devolução%s  \n", C_GRAY, BOLD, NONE);
+    puts("------------------------------------------------------------------------------------------------------------");
+    
     for(int i = 0; i < getQtdEmprestimosCadastrados(emprestimos); i++){
-        puts("------------------------------------------------------------------------------------------------------------");
-        printf("%s%sCPF         Nome                          Código  Título                     Empréstimo  Devolução%s  \n", C_GRAY, BOLD, NONE);
-        puts("------------------------------------------------------------------------------------------------------------");
         printf("%s %-30s %-7s %-30s %02d/%02d/%d %02d/%02d/%d",
         emprestimos[i].Usuario.Cpf,
         emprestimos[i].Usuario.Nome,
