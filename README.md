@@ -8,10 +8,9 @@ Repositório usado para compartilhar a aplicação na prática, com C/C++, do me
 - ☑[Lista 4][l4]: Vetores e Matrizes
 - ☑[Lista 5][l5]: Cadeias de Caracteres
 - ☑[Lista 6][l6]: Funções
-- ▶Lista 7: Recursividade
-- ⌛[Lista 8][l8]: Structs
-- ▶Lista 9: Ordenação e Busca
-
+- ☑[Lista 7][l7]: Recursividade
+- ☑[Lista 8][l8]: Structs
+- ☑[Lista 9][l9]: Ordenação e Busca 
 
 ## Provas
 - [Prova 1](p1)
@@ -30,7 +29,9 @@ Repositório usado para compartilhar a aplicação na prática, com C/C++, do me
     [l4]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-4>
     [l5]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-5>
     [l6]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-6>
+    [l7]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-7>
     [l8]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-8>
+    [l9]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-9>
     [p1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/provas/prova-1>
     [p1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/provas/prova-2>
     [t1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/trabalhos/trabalho-1>
