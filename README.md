@@ -15,6 +15,7 @@ Repositório usado para compartilhar a aplicação na prática, com C/C++, do me
 
 ## Provas
 - [Prova 1](p1)
+- [Prova 2](p2)
 
 ## Trabalhos
 - [Trabalho 1][t1]
@@ -31,6 +32,7 @@ Repositório usado para compartilhar a aplicação na prática, com C/C++, do me
     [l6]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-6>
     [l8]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/listas-de-exercicio/lista-8>
     [p1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/provas/prova-1>
+    [p1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/provas/prova-2>
     [t1]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/trabalhos/trabalho-1>
     [t2]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/trabalhos/trabalho-2>
     [textra]: <https://github.com/davilimabr/bsi-tecnicas-de-programacao-1/tree/main/trabalhos/trabalho-extra>
